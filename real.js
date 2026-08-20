@@ -39,14 +39,45 @@ button.item(1).addEventListener('click', () => {
     input.value = button.item(1).value
 })
 
-button.item(1).addEventListener("dblclick", () => {
-    input.value = button.item(1).value
-})
-
-
 button.item(2).addEventListener("click", () => { 
     input.value = button.item(2).value
     })
+button.item(3).addEventListener('click', () => {
+    input.value = button.item(3).value
+})
+
+button.item(4).addEventListener("click", () => { 
+    input.value = button.item(4).value
+    })
+button.item(5).addEventListener('click', () => {
+    input.value = button.item(5).value
+})
+
+button.item(6).addEventListener("click", () => { 
+    input.value = button.item(6).value
+    })
+button.item(7).addEventListener("click", () => { 
+    input.value = button.item(7).value
+    })
+button.item(8).addEventListener("click", () => { 
+    input.value = " " + button.item(8).value
+    })
+button.item(9).addEventListener("click", () => { 
+    input.value = button.item(9).value
+    })
+
+button.item(10).addEventListener("click", () => { 
+    input.value = button.item(10).value
+    })
+
+button.item(11).addEventListener("click", () => { 
+    input.value = button.item(11).value
+    })
+
+
+
+
+
 
 
 
