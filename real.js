@@ -17,19 +17,26 @@
 // )
 // getsome()
 
-
+//Geting Element
 const button = document.querySelectorAll("button")
 const button_1 = document.querySelector('button')
 const input = document.querySelector("input")
 
 
-// for (let index = 0; index <= 13; index++) {
-//     // const element = array[index];
-//     console.log(index)
-//     button.item(index[1]).addEventListener('click', () => {
-//     input.value = button.item(index).value})
-//     console.log(index,input.value)
-//}
+
+// Creating Add function
+function add(){
+    const old_memory = Number(input.value)
+    console.log(old_memory)
+}
+
+
+
+// Creating Subtract Function
+function sub(){
+    const old_memory = Number(input.value)
+    console.log(old_memory)
+}
 
 
 // To make it display after been clicked
@@ -45,14 +52,12 @@ button.item(2).addEventListener("click", () => {
 button.item(3).addEventListener('click', () => {
     input.value = button.item(3).value
 })
-
 button.item(4).addEventListener("click", () => { 
     input.value = button.item(4).value
     })
 button.item(5).addEventListener('click', () => {
     input.value = button.item(5).value
 })
-
 button.item(6).addEventListener("click", () => { 
     input.value = button.item(6).value
     })
@@ -66,30 +71,36 @@ button.item(9).addEventListener("click", () => {
     input.value = button.item(9).value
     })
 
-button.item(10).addEventListener("click", () => { 
-    input.value = button.item(10).value
+// Addition Button    
+// button.item(10).addEventListener("click", () => { 
+//     input.value = button.item(10).value
+// })
+button.item(10).addEventListener("click", add)
+
+
+// Subtraction Button
+button.item(11).addEventListener("click", sub)
+
+// Clear Button
+button.item(13).addEventListener("click", () => { 
+    input.value = button.item(13).value 
     })
 
-button.item(11).addEventListener("click", () => { 
-    input.value = button.item(11).value
-    })
 
 
 
+button.item(12).addEventListener("click", newmem)
 
+function newmem() {
+    const new_memory =Number( input.value)
+    console.log(new_memory)
 
-
-
-
-button.item(12).addEventListener("click", oldmem)
-
-function oldmem() {
-    let oldmemory = Number(input.value)
-    let newmemory = Number(input.value)
-    console.log(oldmemory)
-    console.log(newmemory)
-    const answer = oldmemory
-    input.value = answer
+    if(button.item(10)){
+        console.log("add")
+        add()
+    }else{
+        comsole.log("Failed")
+    }
 }
 
 function value(){

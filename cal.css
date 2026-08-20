@@ -4,7 +4,7 @@ body{
 .cal{
     background-color: rgb(20, 109, 79);
     width: 320px;
-    height:350px;
+    height:380px;
     padding: 10px;
     border-radius: 20px;
     box-shadow: 10px 10px 40px blue;
@@ -42,4 +42,8 @@ button{
     background-color: burlywood;
     border-radius: 10px;
     font-size: 30px;
+}
+button[value=""]{
+    width: 100px;
+    margin-top: 10px;
 }
