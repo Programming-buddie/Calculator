@@ -1,25 +1,10 @@
-// const button = document.querySelectorAll("button")
-
-// function getsome(){
-//     const but = document.querySelector("button")
-//     but.addEventListener("click", () => { input.value = but.value
-//     })
-// }
-// // button.forEach(button.addEventListener("click", (e) => {
-// //     console.log("cool")
-// //     e.stopPropagation()
-// // }))
-
-// const input = document.querySelector("input")
-// console.log(input.value,input.formTarget
-
-// )
-// getsome()
 
 //Geting Element
 const button = document.querySelectorAll("button");
 const button_1 = document.querySelector("button");
 const input = document.querySelector("input");
+
+
 
 let old_memory;
 // Creating Add function
@@ -66,7 +51,7 @@ button.item(7).addEventListener("click", () => {
   input.value = button.item(7).value;
 });
 button.item(8).addEventListener("click", () => {
-  input.value = " " + button.item(8).value;
+  input.value = button.item(8).value;
 });
 button.item(9).addEventListener("click", () => {
   input.value = button.item(9).value;
@@ -89,11 +74,13 @@ let new_memory
 function result() {
 
   new_memory = Number(input.value);
-  input.value = old_memory + "+" + new_memory
+  
   console.log(new_memory);
-  const answer = old_memory + new_memory
+  const answer = old_memory +sign+ new_memory
   console.log(answer)
   input.value = answer
+
+
 
   // if (button.item(10)) {
   //   console.log("add");
@@ -129,3 +116,5 @@ function value() {
 // }
 
 // display_memory()
+
+  console.log(input.append(old_memory))
