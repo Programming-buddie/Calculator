@@ -1,5 +1,4 @@
 const input = document.querySelector("input")
-
 const button = document.querySelectorAll("button")
 
 
@@ -11,20 +10,21 @@ button.forEach(btn =>{
     if (input.value === "-"){
       console.log("sub", input.value)
     }
+
     let oldMemory
     if (btn.value === "-"){
-      const oldMemory = input.value.split("-")
-      console.log(input.value)
+       oldMemory = input.value.split("-")
+      console.log((Number(oldMemory[0]) - 3))
+      console.log(oldMemory)
     }
      if (btn.innerText === "="){
-        const oldMemory = input.value.split("-")
+         oldMemory = input.value.split("-")
         // console.log(input.value.split(oldMemory))
-        console.log(input.value, 99-1, typeof input.value)
+        input.value = Number(oldMemory[0]-oldMemory[1])
       }
     
   }
 
   
   })
-//   let btn= "-"
-// console.log(btn.match(/(-)/)[0])
+
