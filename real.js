@@ -12,11 +12,11 @@ button.forEach(btn =>{
     }
 
     let oldMemory
-    if (btn.value === "-"){
-       oldMemory = input.value.split("-")
-      console.log((Number(oldMemory[0]) - 3))
-      console.log(oldMemory)
-    }
+    // if (btn.value === "-"){
+    //    oldMemory = input.value.split("-")
+    //   console.log((Number(oldMemory[0]) - 3))
+    //   console.log(oldMemory)
+    // }
      if (btn.innerText === "="){
          oldMemory = input.value.split("-")
         // console.log(input.value.split(oldMemory))
