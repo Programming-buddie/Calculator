@@ -8,15 +8,7 @@ button.forEach((btn) => {
 
   function appear() {
     input.value = input.value.concat(btn.value);
-    if (input.value === "-") {
-      console.log("sub", input.value);
-    }
-
-    // if (btn.value === "-"){
-    //    oldMemory = input.value.split("-")
-    //   console.log((Number(oldMemory[0]) - 3))
-    //   console.log(oldMemory)
-    // }
+  
     if (btn.innerText === "=") {
       let add = input.value.split("+");
       let sub = input.value.split("-");
