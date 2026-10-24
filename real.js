@@ -25,7 +25,7 @@ button.forEach((btn) => {
         input.value = Number(add[0]) + Number(add[1]);
       }
       if (input.value.includes("-")) {
-        input.value = Number(sub[0]) + Number(sub[1]);
+        input.value = Number(sub[0]) - Number(sub[1]);
       }
     }
   }
